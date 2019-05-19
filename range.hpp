@@ -21,7 +21,7 @@ class range{
 			: _pointer(ptr) {
 		}
 
-		const T& operator*() const {
+		T& operator*() const {
 			return _pointer;
 		}
 
