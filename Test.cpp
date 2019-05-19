@@ -98,7 +98,7 @@ int main() {
 	curr += p;  
 	}
 	testcase.CHECK_OUTPUT(curr, ans);  
-
+/*
 	testcase.setname("Zip Test"); // Zip TEST
 	
 	counter = 0;
@@ -136,7 +136,7 @@ int main() {
 	curr += p;  
 	}
 	testcase.CHECK_OUTPUT(curr, ans);  
-
+*/
    ;
    	grade = testcase.grade();
 	} else {
