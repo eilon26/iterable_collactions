@@ -5,7 +5,7 @@ class range{
  private:
 	T start,finnish;
  public:
-	range (const T& a, const T& b):start(a), finnish(b) {}
+	range (T& a, T& b):start(a), finnish(b) {}
 	/*range (const range& other){
 		start = other.start;
 		finnish = other.finnish;
@@ -21,7 +21,7 @@ class range{
 			: _pointer(ptr) {
 		}
 
-		T& operator*() const {
+		const T& operator*() const {
 			return _pointer;
 		}
 
