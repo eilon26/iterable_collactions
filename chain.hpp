@@ -25,7 +25,7 @@ class chain{
 		iterator(decltype(first.begin())  start1,decltype(first.begin())  end1, decltype(second.begin())  start2,decltype(second.begin())  end2)
 		:iter1Begin(start1), iter1End(end1) ,iter2Begin(start2), iter2End(end2)	{}
 
-		const auto& operator*() {
+		auto& operator*() {
 			if (iter1Begin !=iter1End) return *iter1Begin;
            		else return *iter2Begin;
 		}
@@ -43,14 +43,14 @@ class chain{
 		}
 	};  // END OF CLASS ITERATOR
 
-	iterator begin() {
+	iterator begin()const {
 		return iterator{first,second};
 	}
 	
-	iterator end() {
+	iterator end() const{
 		return iterator{first.end(),first.end(),second.end(),second.end()};
 	}
-	unsigned int size(){
+	unsigned int size() const{
 		return first.size()+second.size();
 	}
 };
