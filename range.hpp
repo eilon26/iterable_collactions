@@ -5,7 +5,7 @@ class range{
  private:
 	T start,finnish;
  public:
-	range (T& a, T& b):start(a), finnish(b) {}
+	range (T a, T b):start(a), finnish(b) {}
 	/*range (const range& other){
 		start = other.start;
 		finnish = other.finnish;
@@ -52,15 +52,15 @@ class range{
 		}
 	};  // END OF CLASS ITERATOR
 
-	iterator begin() {
+	iterator begin() const {
 		return iterator{start};
 	}
 	
-	iterator end() {
+	iterator end() const {
 		return iterator{finnish};
 	}
 
-	unsigned int size(){
+	unsigned int size() const{
 		return int(finnish)-int(start);
 	}
 };

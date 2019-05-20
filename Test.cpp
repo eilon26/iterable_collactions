@@ -81,6 +81,7 @@ int main() {
 	for(int p : r1 ) {
 	testcase.CHECK_OUTPUT(p, std::to_string(i_begin + counter++));    
 	}
+	//testcase.CHECK_EQUAL(iterable_to_string(range(5, 9)),string("5,6,7,8,"));
 
 	counter = 0;
 	std::string ans = "abcdefghijklmnopqrstuvwxy";
